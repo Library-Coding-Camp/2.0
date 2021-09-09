@@ -1,0 +1,69 @@
+/*
+white: #fbf9fa
+light-red: #fd0054
+red: #a80038
+black: #2b2024
+*/
+
+.codeboxarea{
+    margin: 20px;
+}
+
+.editing{
+    height: 500px;
+}
+
+.editing textarea{
+    margin-right: 20px;
+    width: 100%;
+    font-size: 15px;
+    height: 49%;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.codebox{
+    font: serif;
+    border-radius: 0px;
+}
+
+#output{
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    font-family: serif;
+    color: black;
+}
+    
+.runBtn{
+    padding: 10px 0px;
+    width: 100%;
+    background-color: #a80038;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+    
+.runBtn button{
+    outline: none;
+    padding: 10px 15px;
+    margin: 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid #fd0054;
+    background-color: #fbf9fa;
+    color:#2b2024;
+}
+  
+.editHTML textarea:active{
+    border: 1px solid black;
+}
+.outputAndEditor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.footer{
+    height: 60px;
+}
+  

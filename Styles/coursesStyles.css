@@ -1,0 +1,81 @@
+/*
+white: #fbf9fa
+light-red: #fd0054
+red: #a80038
+black: #2b2024
+*/
+
+main{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+main h1{
+	font-size: 40px;
+	padding: 5px;
+	font-weight: bold;
+	color: #a80038
+}
+.content{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;	
+}
+
+.content > .course{
+	padding: 15px;
+	border-radius: 4px;
+	margin: 15px;
+	background-color: #fbf9fa;
+	color: #2b2024;
+	box-shadow: 4px 4px 4px rgba(168, 0, 56, 0.25);
+	
+}
+.content > .course a h2{
+	color: #fd0054;
+}
+.content > .course a p{
+	color: #2b2024;
+}
+
+a{
+	text-decoration:none;
+}
+
+.editors{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 30px;
+	width: 80%
+}
+.editors div{
+	width: 100%;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: 4px 4px 4px rgba(168, 0, 56, 0.25);
+	padding:15px 0px;
+}
+.editors a div{
+	color:#fd0054;
+	text-decoration: none;
+	width: 100%;
+}
+
+.headOfSub{
+	margin-bottom: 0px;
+}
+.subOfHead{
+	margin-top: 0px;
+	color: #a80038;
+}
+
+.clickable:hover{
+	box-shadow: none;
+	color: #fd0054;
+
+}

@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../Styles/navbarStyles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel = "stylesheet" href = "../Styles/HTMLlessonsStyles/HTMLcodebox.css">
+	</head>
+	
+	</style>
+	<body>
+		<section class = "navbar">
+			<h3>Library Coding Camp</h3>
+			<nav>
+				<a href = "../courses.html">Courses</a>
+				<a href = "">Challenges</a>
+				<a href = "">Learn More</a>
+			</nav>
+		</section>
+		
+		<section>
+			<main>
+                <div class = "codeboxarea">
+                    <script>
+                            function updateOutput(value){
+                                document.getElementById('output').innerHTML = value;
+                            }
+                    </script>
+                    <div class = "runBtn">
+                            <button onClick ="updateOutput(document.getElementById('HTMLcodebox').value)" >Run code</button>
+                    </div>   
+                    <div class = "outputAndEditor">
+                        <div class = "editHTML">
+                            <textarea placeholder = "ADD YOUR HTML HERE" class = "codebox" id = "HTMLcodebox" ></textarea>   
+                        </div>
+                        <div id = "output" ></div>
+                    </div>
+                </div>
+			</main>
+		</section>
+		
+		<section class = "footer">
+			
+		</section>
+	</body>
+</html>
+

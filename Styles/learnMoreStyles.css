@@ -1,0 +1,130 @@
+/*
+white: #fbf9fa
+light-red: #fd0054
+red: #a80038
+black: #2b2024
+*/
+
+/*Header*/
+
+.header{
+    background-color: #fbf9fa;
+    padding: 100px;
+}
+
+.header > .content{
+    color: #2b2024;
+    text-align: center;
+}
+.header h1{
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.header p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.header > .content{
+    margin:auto 10%;
+}
+
+/*Courses*/
+main{
+    background-color: #a80038;
+    margin-bottom: 0;
+}
+
+
+.cards{
+    margin: 30px auto;
+    width: 60%;
+    font-size: 1.2rem;
+    padding: 40px;
+}
+
+.cards a{
+    color:#fbf9fa;
+    border-bottom: 3px dashed #fd0054;
+    padding-bottom: 1px;
+    text-decoration: none;
+}
+
+.cards a i{
+    color:#fd0054;
+}
+
+.cards > .card{
+    padding: 25px 0;
+    color: #2b2024;
+}
+
+.content{
+    padding-left: 30px;
+}
+.card img{
+    width: 100%;
+    border-radius: 100%;
+}
+.card{
+    display: grid;
+    grid-template-columns: 0.9fr 2fr;
+}
+.img-credit{
+    font-size: 0.8rem;
+}
+
+.cards h3{
+    display: inline;
+    color: #fbf9fa;
+    font-size: 1.5rem;
+}
+
+.cards p{
+    line-height: 1.5;
+    color: #fbf9fa;
+
+}
+
+hr{
+    width: 30%;
+    border-top: 5px dotted #fbf9fa;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin: 20px auto;
+    padding: 30px 0px;
+    
+}
+
+.header img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+main .cards{
+    margin-bottom: 0;
+}
+
+.footer{
+    margin-top: 0;
+}
+
+@media (max-width: 550px) {
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .card img{
+        margin-bottom: 70px;
+    }
+
+    .header > .content{
+        margin: 0;
+    }
+  }

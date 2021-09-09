@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../Styles/navbarStyles.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel = "stylesheet" href = "../Styles/HTMLlessonsStyles/Javascriptcodebox.css">
+	</head>
+	
+	</style>
+	<body>
+		<section class = "navbar">
+			<h3>Library Coding Camp</h3>
+			<nav>
+				<a href = "../courses.html">Courses</a>
+				<a href = "">Challenges</a>
+				<a href = "">Learn More</a>
+			</nav>
+		</section>
+		
+		<section>
+			<main>
+                <div class = "codeboxarea">
+
+                    <script>
+                            function updateOutput(value, cssValue, jValue){
+                                var frame = document.getElementById('output').contentWindow.document;
+                                frame.open();
+                                frame.write("<scri"+"p"+"t>"+jValue +"</scri"+"pt> <style>"+ cssValue+ "</style>" + value;);
+                                frame.close();
+
+                                console.log(document.getElementById('output').innerHTML);
+                            }
+                    </script>
+
+                    <div class = "runBtn">
+                            <button onClick ="updateOutput(document.getElementById('HTMLcodebox').value, 
+                            document.getElementById('CSScodebox').value,
+                            document.getElementById('Javascriptcodebox').value)" >Run code</button>
+                    </div>   
+                    <div class = "outputAndEditor">
+                        <div class = "editing">
+                            <div class = "editHTML">
+                                <textarea placeholder = "ADD YOUR HTML HERE" class = "codebox" id = "HTMLcodebox" ></textarea>   
+                            </div>
+                            <div class = "editCSS">
+                                <textarea placeholder = "ADD YOUR CSS HERE" class = "codebox" id = "CSScodebox" ></textarea>   
+                            </div>
+                            <div class = "editJavascript">
+                                <textarea placeholder = "ADD YOUR JAVASCRIPT HERE" class = "codebox" id = "Javascriptcodebox" ></textarea>   
+                            </div>
+                        </div>
+                        <iframe id = "output" ></iframe>
+                    </div>
+                </div>
+			</main>
+		</section>
+		
+		<section class = "footer">
+			
+		</section>
+	</body>
+</html>
+
